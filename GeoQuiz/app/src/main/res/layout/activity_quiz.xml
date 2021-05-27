@@ -8,7 +8,10 @@
         android:id="@+id/question_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="24dp"/>
+        android:padding="24dp"
+        android:textAlignment="center"
+        android:paddingBottom="20dp"
+        android:gravity="center_horizontal" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -20,19 +23,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/true_button"
-        />
+            style="?android:attr/borderlessButtonStyle"/>
         <Button
             android:id="@+id/false_button"
             android:background="#0071D5"
             android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/false_button" />
-        </LinearLayout>
-    <Button
-        android:id="@+id/next_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next_button"
-        />
+            android:text="@string/false_button"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+<!--            <Button-->
+<!--                android:id="@+id/back_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/back_button"-->
+<!--                android:background="#888"-->
+<!--                android:drawableLeft="@drawable/left"-->
+<!--                android:padding="10dp">-->
+
+<!--            </Button>-->
+<!--            <Button-->
+<!--                android:id="@+id/next_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/next_button"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:background="#888"-->
+<!--                android:drawableRight="@drawable/right"-->
+<!--                android:padding="10dp"-->
+<!--                />-->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left"
+            android:contentDescription="@string/app_name"
+            />
+        <ImageButton
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right"
+            android:contentDescription="@string/app_name"
+            />
+
+    </LinearLayout>
+
 </LinearLayout>
