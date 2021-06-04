@@ -2,7 +2,7 @@ package com.conghautran.geoquiz;
 
 public class Question {
     private int mTextResId;
-    private boolean mAnswerResId;
+    private boolean mAnswerTrue;
 
     public int getTextResId() {
         return mTextResId;
@@ -13,16 +13,20 @@ public class Question {
     }
 
     public boolean isAnswerResId() {
-        return mAnswerResId;
+        return mAnswerTrue;
     }
 
     public void setAnswerResId(boolean answerResId) {
-        mAnswerResId = answerResId;
+        mAnswerTrue = answerResId;
     }
 
     public Question(int textResId, boolean answerTrue){
         mTextResId=textResId;
-        mAnswerResId=answerTrue;
+        mAnswerTrue=answerTrue;
     }
 
+
+    public boolean isAnswerTrue() {
+        return mAnswerTrue;
+    }
 }
